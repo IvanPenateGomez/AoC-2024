@@ -1,5 +1,27 @@
-data1 = (33,25,21,28,21,26,30,23,55,28,33,28,32,28,23,29,38,30,22,29,28,34,32,25,24,37)
-data2 = (16,19,19,17,15,15,13,12,42,27,16,14,29,14,17,21,18,21,19,19,19,17,25,31,19,15)
+class MyClass:
+    class_variable = 0
+    a = False
 
-print(sum(data2),sum(data2[x] for x in [0,4,8,14,20]))
-print(109/762)
+    def __init__(self, value):
+        self.instance_variable = value
+
+    @classmethod
+    def class_method(cls, x):
+        cls.class_variable += x
+        return cls.class_variable
+
+# Creating instances of the class
+obj1 = MyClass(5)
+obj2 = MyClass(10)
+
+# Calling the class method
+print(MyClass.class_method(3))
+print(MyClass.class_method(7))
+
+print(obj2.class_variable) 
+
+obj2.class_method(3)
+
+print(MyClass.class_method(3))
+print(MyClass.class_method(7))
+print(obj2.class_variable)

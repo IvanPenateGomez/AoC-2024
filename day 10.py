@@ -18,6 +18,8 @@ def findEnds(x, y, arr, seen):
             total += findEnds(nx, ny, arr, seen)
     
     return total
+        
+    
 
 def findEndsPart2(x, y, arr, seen):
     current = arr[y][x]
