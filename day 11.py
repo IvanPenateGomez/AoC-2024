@@ -14,7 +14,6 @@ def part1():
     
     return len(arr)
 
-print(part1())
 
 def part2():
     arr = {0: 1, 5601550: 1, 3914: 1, 852: 1, 50706: 1, 68: 1, 6: 1, 645371: 1}
@@ -31,6 +30,7 @@ def part2():
             else:
                 temp[s * 2024] = temp.get(s * 2024, 0) + c
         arr = temp
+        print(len(arr))
     
     return sum(arr.values())
 
