@@ -1,25 +1,14 @@
 def part1():
     def getPath(A, B, P):
-        ax, ay = A
-        bx, by = B
-        px, py = P
+        for a in range(100):
+            if (P[0] - A[0] * a) % B[0] == 0 and (P[1] - A[1] * a) % B[1] == 0:
+                bx = (P[0] - A[0] * a) // B[0]
+                by = (P[1] - A[1] * a) // B[1]
 
-        min_cost = float('inf')
-        for aCount in range(max([P[0]//A[0],P[1]//A[1],P[0]//B[0],P[1]//B[1]])):
-            if (px - ax * aCount) % bx == 0 and (py - ay * aCount) % by == 0:
-                bCount_x = (px - ax * aCount) // bx
-                bCount_y = (py - ay * aCount) // by
-
-                if bCount_x == bCount_y and bCount_x >= 0:
-                    cost = 3 * aCount + bCount_x
-                    min_cost = min(min_cost, cost)
-
-        return min_cost if min_cost != float('inf') else 0       
+                if bx == by and by >= 0: return 3 * a + bx
+        return 0   
     
     total = 0
-    A = (0,0)
-    B = (0,0)
-    P = (0,0)
     for line in list(open("day 13.txt",'r').read().split("\n")):
         if line == "":
             total += getPath(A,B,P)
@@ -27,12 +16,9 @@ def part1():
         
         label, coords = line.split(":")
         x,y = coords.split(",")
-        if "A" in label:
-            A = (int(x.split("+")[1]), int(y.split("+")[1]))
-        if "B" in label:
-            B = (int(x.split("+")[1]), int(y.split("+")[1]))
-        if "P" in label:
-            P = (int(x.split("=")[1]), int(y.split("=")[1]))
+        if "A" in label:A = (int(x.split("+")[1]), int(y.split("+")[1]))
+        if "B" in label:B = (int(x.split("+")[1]), int(y.split("+")[1]))
+        if "P" in label:P = (int(x.split("=")[1]), int(y.split("=")[1]))
     return total
 
 
@@ -52,10 +38,6 @@ def part2():
         return 0
 
     total = 0
-    A = (0, 0)
-    B = (0, 0)
-    P = (0, 0)
-
     for line in list(open("day 13.txt", 'r').read().split("\n")):
         if line == "":
             total += solveEq(A, B, (P[0]+10000000000000,P[1]+10000000000000))
