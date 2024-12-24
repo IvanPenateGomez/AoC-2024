@@ -23,8 +23,6 @@ def part1():
     return sum(countClusters(mapping, seen, tComp, connections) 
                for tComp, connections in mapping.items() if tComp.startswith('t'))
 
-print(part1())
-
 import networkx as nx
 def part2():
     mapping = nx.Graph()
