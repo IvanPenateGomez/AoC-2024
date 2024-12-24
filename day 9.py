@@ -75,4 +75,5 @@ def part2():
 
         return sum(int(v) * i for i,v in enumerate(out) if out[i] != ".")
 
-print(part2())
+print("Part 1:", part1())
+print("Part 2:", part2())

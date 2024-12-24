@@ -21,4 +21,6 @@ def part1():
         if "P" in label:P = (int(x.split("=")[1]), int(y.split("=")[1]))
     return p1,p2
 
-print(part1())
+p1,p2 = part1()
+print("Part 1:", p1)
+print("Part 2:", p2)

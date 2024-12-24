@@ -1,4 +1,3 @@
-
 def is_safe(report):
     prev = report[0]
     inc = None
@@ -39,6 +38,5 @@ def part2():
 
     return counter
 
-print(part2())
-
-print(part1())
+print("Part 1:" ,part1())
+print("Part 2:" ,part2())

@@ -1,5 +1,3 @@
-from collections import defaultdict
-
 NUMPAD = [
     [7, 8, 9],
     [4, 5, 6],
@@ -28,18 +26,22 @@ hardCodedPaths = dict([(('A','^'),'<A'),
                         (('A','>'),'vA'),
                         (('A','v'),'<vA'),
                         (('A','<'),'v<<A'),
+                        
                         (('^','A'),'>A'),
                         (('^','>'),'v>A'),
                         (('^','<'),'v<A'),
                         (('^','v'),'vA'),
+                        
                         (('v','A'),'^>A'),
                         (('v','>'),'>A'),
                         (('v','<'),'<A'),
                         (('v','^'),'^A'),
+                        
                         (('>','A'),'^A'),
                         (('>','^'),'<^A'),
                         (('>','v'),'<A'),
                         (('>','<'),'<<A'),
+                        
                         (('<','A'),'>>^A'),
                         (('<','^'),'>^A'),
                         (('<','v'),'>A'),
@@ -117,5 +119,5 @@ def part2():
         total += sum(len(s) * c for s,c in string.items()) * int(line[:-1])
     return total
 
-print(part1())
-print(part2())
+print("Part 1:", part1())
+print("Part 2:", part2())

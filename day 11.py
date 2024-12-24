@@ -30,9 +30,8 @@ def part2():
             else:
                 temp[s * 2024] = temp.get(s * 2024, 0) + c
         arr = temp
-        print(len(arr))
     
     return sum(arr.values())
 
-print(part2())
-
+print("Part 1:", part1())
+print("Part 2:", part2())

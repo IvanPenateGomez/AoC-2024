@@ -59,5 +59,5 @@ def part2():
             graph[y][x] = "O"
             robots[i] = [x, y, xs, ys]  # Save updated robot position
 
-print(part1())
-part2()
+print("Part 1:", part1())
+#print("Part 2:", part2())

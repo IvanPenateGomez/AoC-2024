@@ -30,30 +30,23 @@ def part1():
     arr = [list(line) for line in open("day 20.txt",'r').read().split("\n")]
     
     s = [(x,y) for y in range(len(arr)) for x in range(len(arr[0])) if arr[y][x] == "S"][0]
-    e = [(x,y) for y in range(len(arr)) for x in range(len(arr[0])) if arr[y][x] == "E"][0]
 
-    total = dijkstra(arr,s)[e]
-    print(total)
-    count = 0
-    for y in range(len(arr)):
-        for x in range(len(arr)):
-            if arr[y][x] != "#":continue
+    distances = dijkstra(arr,s)
+    counter = 0
+    for ((x,y), distA) in distances.items():
+        for ((s,t),distB) in distances.items():
+            if (s,t) == (x,y): continue
             
-            arr[y][x] = "."
+            dist = abs(x - s) + abs(y - t)
+            if dist <= 2 and distB - distA - dist >= 100:
+                counter += 1
             
-            value = dijkstra(arr,s)[e]
-            if total-value >= 100:
-                count += 1
-            
-            arr[y][x] = "#"
-    
-    return count
+    return counter
 
 def part2():
     arr = [list(line) for line in open("day 20.txt",'r').read().split("\n")]
     
     s = [(x,y) for y in range(len(arr)) for x in range(len(arr[0])) if arr[y][x] == "S"][0]
-    e = [(x,y) for y in range(len(arr)) for x in range(len(arr[0])) if arr[y][x] == "E"][0]
 
     distances = dijkstra(arr,s)
     counter = 0
@@ -68,5 +61,5 @@ def part2():
     return counter
 
 
-#print(part1())
-print(part2())
+print("Part 1:", part1())
+print("Part 2:", part2())

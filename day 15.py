@@ -135,4 +135,5 @@ def part2():
                         x = nx    
     return sum(y*100 + x for x in range(len(g[0])) for y in range(len(g)) if g[y][x] == "[")   
 
-print(part2())
+print("Part 1:", part1())
+print("Part 2:", part2())

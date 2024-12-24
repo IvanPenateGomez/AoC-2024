@@ -54,4 +54,6 @@ def part1():
         antiNodes = antiNodes.union(getAntiNodes(v))
 
     return len(antiNodes)
-print(part1())
+
+#print("Part 1:", part1())
+print("Part 2:", part1())

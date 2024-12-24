@@ -106,5 +106,5 @@ def part2():
 
     return count_reachable_nodes(prev_nodes, (ex, ey, 0)) - 1
 
-print(part1())
-print(part2())
+print("Part 1:", part1())
+print("Part 2:", part2())

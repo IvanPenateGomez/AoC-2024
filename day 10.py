@@ -58,5 +58,5 @@ def part2():
     return sum(findEndsPart2(x, y, arr, set()) for x,y in starting)
 
 
-print(part1())
-print(part2())
+print("Part 1:", part1())
+print("Part 2:", part2())

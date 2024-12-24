@@ -35,4 +35,5 @@ def part2():
     cluster = max(list(nx.find_cliques(mapping)),key=len)
     return ",".join(sorted(cluster))
 
-print(part2())
+print("Part 1:", part1())
+print("Part 2:", part2())

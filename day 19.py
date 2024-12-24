@@ -45,4 +45,5 @@ def part2():
     file.readline()
     return sum(getArrangements(logo.strip(), patterns) for logo in file if valid(logo.strip(), patterns))
 
-print(part2())
+print("Part 1:", part1())
+print("Part 2:", part2())

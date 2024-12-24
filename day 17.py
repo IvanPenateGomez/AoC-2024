@@ -142,6 +142,5 @@ def part2():
         arr = [a for x in range(8) for e in arr if test(a:=((e<<3) + x))]
     return min(arr)
   
-print(f"part1 = {part1()}")
-#print(part1Debug())
-print(f"part2 = {part2()}")
+print("Part 1:", part1())
+print("Part 2:", part2())
