@@ -1,0 +1,222 @@
+z00: x00 XOR y00
+z01: gmk XOR vgr
+        gmk: x00 AND y00
+        vgr: x01 XOR y01
+z02: gsh XOR nwk
+        gsh: x02 XOR y02
+        nwk: fsm OR jvm
+                fsm: gmk AND vgr
+                jvm: x01 AND y01
+z03: btf XOR sjn
+        btf: x03 XOR y03
+        sjn: hhn OR ksr
+                hhn: gsh AND nwk
+                ksr: x02 AND y02
+z04: cnv XOR fpr
+        cnv: ggr OR jjg
+                ggr: btf AND sjn
+                jjg: x03 AND y03
+        fpr: x04 XOR y04
+z05: whq XOR wmv
+        whq: gfh OR mjc
+                gfh: cnv AND fpr
+                mjc: x04 AND y04
+        wmv: x05 XOR y05
+z06: btp XOR hsm
+        btp: x06 XOR y06
+        hsm: kjf OR wtq
+                kjf: whq AND wmv
+                wtq: x05 AND y05
+z07: x07 AND y07
+z08: rkw XOR whp
+        rkw: gmt OR wnn
+                gmt: mvw XOR pmc
+                        mvw: x07 XOR y07
+                        pmc: hgj OR jtg
+                                hgj: x06 AND y06
+                                jtg: btp AND hsm
+                wnn: mvw AND pmc
+        whp: x08 XOR y08
+z09: msv XOR vcs
+        msv: hnb OR tjc
+                hnb: x08 AND y08
+                tjc: rkw AND whp
+        vcs: x09 XOR y09
+z10: mqd XOR mvb
+        mqd: cjr OR nbd
+                cjr: msv AND vcs
+                nbd: x09 AND y09
+        mvb: x10 XOR y10
+z11: cbj XOR csm
+        cbj: x11 AND y11
+        csm: stp OR tgf
+                stp: mqd AND mvb
+                tgf: x10 AND y10
+z12: mhf XOR tgs
+        mhf: dnt OR qjj
+                dnt: cbj AND csm
+                qjj: x11 XOR y11
+        tgs: x12 XOR y12
+z13: fmh XOR rhg
+        fmh: fdq OR jns
+                fdq: mhf AND tgs
+                jns: x12 AND y12
+        rhg: x13 XOR y13
+z14: hqd XOR wdt
+        hqd: hvw OR wvj
+                hvw: x13 AND y13
+                wvj: fmh AND rhg
+        wdt: x14 XOR y14
+z15: btg XOR mjw
+        btg: shh OR wqc
+                shh: hqd AND wdt
+                wqc: x14 AND y14
+        mjw: x15 XOR y15
+z16: fnb XOR fpg
+        fnb: x16 XOR y16
+        fpg: bws OR ghs
+                bws: x15 AND y15
+                ghs: btg AND mjw
+z17: bqf XOR ksf
+        bqf: x17 XOR y17
+        ksf: qmp OR vws
+                qmp: fnb AND fpg
+                vws: x16 AND y16
+z18: khk OR stg
+        khk: x18 AND y18
+        stg: hch AND nff
+                hch: x18 XOR y18
+                nff: hnn OR jkw
+                        hnn: x17 AND y17
+                        jkw: bqf AND ksf
+z19: dmn XOR dsj
+        dmn: hch XOR nff
+        dsj: x19 XOR y19
+z20: fqp XOR qwj
+        fqp: gqc OR rsf
+                gqc: x19 AND y19
+                rsf: dmn AND dsj
+        qwj: x20 XOR y20
+z21: tqw XOR vmm
+        tqw: x21 XOR y21
+        vmm: gqm OR swv
+                gqm: x20 AND y20
+                swv: fqp AND qwj
+z22: kpq XOR rvw
+        kpq: x22 XOR y22
+        rvw: kmq OR kqs
+                kmq: x21 AND y21
+                kqs: tqw AND vmm
+z23: cpd XOR gcn
+        cpd: x23 XOR y23
+        gcn: bhk OR kck
+                bhk: x22 AND y22
+                kck: kpq AND rvw
+z24: gqk XOR vmk
+        gqk: rww OR sbs
+                rww: x23 AND y23
+                sbs: cpd AND gcn
+        vmk: x24 XOR y24
+z25: nsp XOR rkh
+        nsp: hqt OR mvd
+                hqt: x24 AND y24
+                mvd: gqk AND vmk
+        rkh: x25 XOR y25
+z26: kwd XOR njp
+        kwd: x26 XOR y26
+        njp: gkk OR qtf
+                gkk: nsp AND rkh
+                qtf: x25 AND y25
+z27: jbj XOR mpf
+        jbj: nsh OR qvt
+                nsh: kwd AND njp
+                qvt: x26 AND y26
+        mpf: x27 XOR y27
+z28: qvr XOR tfc
+        qvr: x28 XOR y28
+        tfc: nnt OR pft
+                nnt: jbj AND mpf
+                pft: x27 AND y27
+z29: cmt XOR fmk
+        cmt: kqq OR mst
+                kqq: qvr AND tfc
+                mst: x28 AND y28
+        fmk: x29 XOR y29
+z30: hqn XOR srg
+        hqn: ktk OR rhq
+                ktk: cmt AND fmk
+                rhq: x29 AND y29
+        srg: x30 XOR y30
+z31: kng XOR mfw
+        kng: x31 XOR y31
+        mfw: hfm OR vqq
+                hfm: hqn AND srg
+                vqq: x30 AND y30
+z32: bnm XOR spk
+        bnm: x32 XOR y32
+        spk: ghp OR qfs
+                ghp: kng AND mfw
+                qfs: x31 AND y31
+z33: dnc XOR mrj
+        dnc: x33 XOR y33
+        mrj: sdm OR tmd
+                sdm: x32 AND y32
+                tmd: bnm AND spk
+z34: smf XOR wcd
+        smf: gvs OR hbn
+                gvs: dnc AND mrj
+                hbn: x33 AND y33
+        wcd: x34 XOR y34
+z35: qnm AND rfk
+        qnm: gpc OR wmn
+                gpc: smf AND wcd
+                wmn: x34 AND y34
+        rfk: x35 XOR y35
+z36: kth XOR mbw
+        kth: x36 XOR y36
+        mbw: cfk OR rct
+                cfk: qnm XOR rfk
+                rct: x35 AND y35
+z37: cqs XOR ncc
+        cqs: dqk OR vrv
+                dqk: kth AND mbw
+                vrv: x36 AND y36
+        ncc: x37 XOR y37
+z38: bfm XOR jnw
+        bfm: x38 XOR y38
+        jnw: snr OR ttv
+                snr: cqs AND ncc
+                ttv: x37 AND y37
+z39: rfr XOR vtd
+        rfr: x39 XOR y39
+        vtd: fsw OR gpt
+                fsw: x38 AND y38
+                gpt: bfm AND jnw
+z40: hkg XOR rrb
+        hkg: x40 XOR y40
+        rrb: jjc OR sgk
+                jjc: x39 AND y39
+                sgk: rfr AND vtd
+z41: gnj XOR vnn
+        gnj: x41 XOR y41
+        vnn: gmf OR kdk
+                gmf: hkg AND rrb
+                kdk: x40 AND y40
+z42: qqj XOR tqh
+        qqj: x42 XOR y42
+        tqh: qqq OR tmj
+                qqq: x41 AND y41
+                tmj: gnj AND vnn
+z43: nws XOR rfg
+        nws: x43 XOR y43
+        rfg: rmc OR vgs
+                rmc: qqj AND tqh
+                vgs: x42 AND y42
+z44: cmk XOR mdq
+        cmk: x44 XOR y44
+        mdq: cms OR tsb
+                cms: nws AND rfg
+                tsb: x43 AND y43
+z45: jdb OR qdd
+        jdb: x44 AND y44
+        qdd: cmk AND mdq

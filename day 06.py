@@ -1,5 +1,3 @@
-from copy import deepcopy
-
 def moveForward(x,y,z,m):
     newX,newY = x,y
     if z == 0:
